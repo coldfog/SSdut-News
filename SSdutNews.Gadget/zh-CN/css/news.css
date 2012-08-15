@@ -1,0 +1,71 @@
+﻿body
+{
+    padding:0px;
+    color: #000;
+    margin:0px;
+    background-color:#cccccc;
+    font-family: Microsoft YaHei, Calibri, Tahoma, sans-serif;
+    width:296px;
+    height:232px;
+}    
+
+a
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+a#buttonLeftNarrator
+{
+    cursor:default;
+    top: 1px;
+    position: absolute;
+}
+a#buttonRightNarrator
+{
+    cursor:default;
+    top: 1px;
+    position: absolute;
+}
+div#LoadingView
+{
+    color: #ffffff;
+    position: absolute;
+    visibility: visible;
+    left: 98px;
+    top: 100px;
+
+}
+div#navHolder
+{
+    position:absolute; 
+    visibility:hidden;
+}   
+a.readItem
+{
+    
+    font-weight: 400;
+} 
+
+a.unreadItem
+{
+    color: #ffaf24;
+    font-weight: 700;
+}
+/*a*/
+/*{*/
+    /*font-weight: 400;*/
+/*} */
+/*a.textView:hover*/
+/*{*/
+  /*color:#6DD6C6;*/
+/*}*/
+/*a.textLoad:hover*/
+/*{*/
+  /*color:#ffffff;*/
+/*}*/
+div#NewsItemHldr
+{
+    position:absolute;
+    padding-top:44px;
+    /*top:56px;*/
+}

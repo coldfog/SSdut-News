@@ -1,0 +1,78 @@
+<p>﻿</p>
+<h2>概述</h2>
+<p>本文档是SSdut News的开发者文档，目的是为了便于二次开发及学习交流使用。</p>
+<h3>SSdut News是什么</h3>
+<p>SSdut News 是专为大连理工软件学院学院网定制的学生周知抓取桌面小工具(Windows Gadget)。目的是为了能够方便同学查看学生周知，第一时间获取学生周知，从此脱离每天登录烦人的学院网苦恼。</p>
+<p>SSdut News 使用JS+HTML+CSS+PYTHON开发，并且是完全开源的，遵守 <a href="http://www.apache.org/licenses/LICENSE-2.0" title="Apache License, Version 2.0">Apache License, Version 2.0</a> 许可证。 </p>
+<p>在开发过程中使用到了如下第三方库，您可以从以下地址获得：</p>
+<ul>
+<li><a href="http://www.tornadoweb.org/" title="PyWin32">Tornado</a></li>
+<li><a href="http://sourceforge.net/projects/pywin32/" title="Tornado">PyWin32(需翻墙)</a></li>
+<li><a href="http://www.py2exe.org/" title="Py2exe">Py2exe</a></li>
+</ul>
+<h3>关于开发者</h3>
+<p>姓名： 冯昱尧</p>
+<p>隶属：创新中心网络组</p>
+<p>邮箱： yyaofeng@Gmail.com</p>
+<h2>开发环境</h2>
+<h3>快速开发环境搭建</h3>
+<ul>
+<li>前端<ul>
+<li>为了调试Windows Gadget程序需要安装 Dbgview小工具。并且修改注册表项 <em>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Sidebar</em> 中的 <em>ShowScriptErrors</em> 值为1。</li>
+</ul>
+</li>
+<li>后端<ul>
+<li>安装 <a href="http://www.python.org/getit/releases/2.7.3/">Python 2.X</a></li>
+<li>安装 <a href="http://www.tornadoweb.org/">Tornado</a></li>
+<li>安装 <a href="http://sourceforge.net/projects/pywin32/">PyWin32</a></li>
+<li>安装 <a href="http://sourceforge.net/projects/py2exe/files/">Py2exe</a></li>
+</ul>
+</li>
+</ul>
+<h2>架构说明</h2>
+<p>SSdut News
+分为前端和后端两个部分。前后端之间通过HTTP协议进行通信。具体通信协议详见文件newsUpdater.py的注释部分（为了避免源代码编码问题所以用了蹩脚的英文Orz）。</p>
+<ul>
+<li>
+<p>前端基于Windows Gadget系统，使用JS+HTML+CSS开发。功能有如下几项：</p>
+<ul>
+<li>绘制UI，并将后端提供的JSON格式的新闻转化为用户友好的形式显示。</li>
+<li>通过HTTP协议操作后端。包括每隔一段时间命令后端更新新闻。</li>
+</ul>
+</li>
+<li>
+<p>后端基于Python Web Server Tornado开发。使用Sqlite3作为数据库。并两次封装：</p>
+<ol>
+<li>为了使后端程序一直运行，使用PyWin32将后端服务器封装入名为SSDUT News
+   Updater的Windows Service。</li>
+<li>为了使没有Python环境的用户使用，用Py2exe将程序封装为updaterLauncher.exe</li>
+</ol>
+</li>
+</ul>
+<h2>代码结构</h2>
+<ul>
+<li>前端<ul>
+<li>zh-CN/gadget.xml  Windows Gadget注册文件</li>
+<li>zh-CN/flyout.html 弹出窗口的HTML文件</li>
+<li>zh-CN/news.html 主窗口的HTML文件</li>
+<li>zh-CN/js/news.js 前端的JS脚本</li>
+<li>zh-CN/css/flyout.css 弹出窗口的CSS文件</li>
+<li>zh-CN/css/news.css 主窗口的CSS文件</li>
+</ul>
+</li>
+<li>后端<ul>
+<li>newsUpdater.py Tornado服务器</li>
+<li>upderLauncher.py Tornado服务器的Windows Service封装模块</li>
+<li>setup.py Py2exe的打包文件</li>
+</ul>
+</li>
+<li>安装脚本<ul>
+<li>setup.py 安装脚本（与后端的setup.py在不同目录下）</li>
+<li>unistall.py 卸载脚本</li>
+</ul>
+</li>
+</ul>
+<p>限于篇幅其余的代码细节请参照源代码注释。</p>
+<h2>联系方式</h2>
+<p>有任何问题请联系：</p>
+<p>mail: yyaofeng@Gmail.com</p>

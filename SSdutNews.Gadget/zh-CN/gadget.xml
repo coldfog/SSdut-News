@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<gadget>
+  <name>软件学院学生周知</name>
+  <namespace><!--_locComment_text="{Locked}"-->networkgroup.yyao</namespace>
+  <version><!--_locComment_text="{Locked}"-->0.1.0.0</version>
+  <author name="Yuyao Feng">
+    <info url="http://www.renren.com/358027015" text="作者RenRen"/>
+    <logo src="logo.png"/>
+  </author>
+  <copyright>
+    <!--_locComment_text="{Locked}"-->? 2012</copyright>
+  <description>查看并提示软件学院的最新学生周知。</description>
+  <icons>
+    <icon width="296" height="232" src="icon.png"/>
+  </icons>
+  <hosts>
+    <host name="sidebar">
+      <autoscaleDPI><!--_locComment_text="{Locked}"-->true</autoscaleDPI>
+      <base type="HTML" apiVersion="1.0.0" src="news.html"/>
+      <permissions><!--_locComment_text="{Locked}"-->Full</permissions>
+      <platform minPlatformVersion="1.0"/>
+      <defaultImage src="drag.png"/>
+    </host>
+  </hosts>
+</gadget>

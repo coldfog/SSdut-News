@@ -1,0 +1,77 @@
+﻿/*
+//---------------------------------------------
+//  THIS CODE IS NOT APPROVED FOR USE IN/ON ANY OTHER UI ELEMENT OR PRODUCT COMPONENT.  
+//  Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+// ----------------------------------------------
+*/
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+    width: 303px;
+    height: 225px;
+    color: #ffffff;
+    font-size: 10px;
+    background-color:#ff00ff;
+    font-family: Microsoft YaHei, Calibri, Tahoma, sans-serif;
+    background-repeat: no-repeat;
+}
+a#flyoutTitleLink
+{
+    position:absolute;
+    left:5px;
+    top:0px;
+    width:286px;
+    height:22px;
+    color: #fff;
+    padding-top:5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    overflow:hidden;
+}
+a#flyoutTitleLink:hover
+{
+     color:#d6f4ff;
+}
+
+div#flyoutBack
+{   
+    position: absolute;
+    left: 5px;
+    top: 3px;   
+    width:291px;
+    height:26px;
+}
+a#flyoutPubDate
+{
+    text-decoration: none;
+    position: absolute;
+    left: 5px;
+    top: 16px;
+    width: 280px;
+    height: 18px;    
+    color: #ffffff;
+    font-size: 11px;
+    font-family: Microsoft YaHei, Calibri, Tahoma, sans-serif;
+}
+a#flyoutPubDate:hover
+{
+     color:#d6f4ff;
+}
+
+div#flyoutMain
+{
+    position: absolute;
+    left: 0px;
+    top: 34px;
+    width: 291px;
+    height: 180px;
+    color: #000000;
+    font-size: 12px;
+    overflow:auto;
+    padding-right:10px;
+    padding-left:10px;
+    padding-top:10px;
+}

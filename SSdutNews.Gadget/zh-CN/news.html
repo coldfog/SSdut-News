@@ -1,0 +1,86 @@
+﻿<html>
+    <head>
+        <title>SSdut News</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link href="zh-CN/css/news.css" rel="stylesheet" type="text/css" />
+        <!--<script language="VBScript">-->
+        <script language="javascript" type="text/javascript" src="zh-CN/js/news.js"></script>
+    </head>
+    <body onload="loadMain();" onmousewheel="mouseWheelNavigate();">
+        <!--onunload="onClose()">-->
+        <g:background id="rssfeedBg" style="position:absolute;z-index:-1" src="images/background.png" />
+        <div id="LoadingView">
+            <img id="loadingIcon" src="images/16-on-black.gif" border="0"/>
+            Loading...
+        </div>
+        <div id="NewsItemHldr">
+            <div id="NewsItem0">
+            <a id="NewsItemLink0" class="unreadItem" href=""
+                onClick="showFlyout(this);selectBack(this.parentElement);this.blur();return false;" 
+                onmouseover="toggleBack(this.parentElement, true);"
+                onmouseout="toggleBack(this.parentElement,
+                false);">item 0</a>
+                <div id="NewsItemName0"
+                    style="float:left;text-align:left;"></div>
+                <div id="NewsItemDate0"
+                    style="float:right;text-align:right;"></div>
+            </div>
+            <div id="NewsItem1">
+            <a id="NewsItemLink1" href=""
+                onClick="showFlyout(this);selectBack(this.parentElement);this.blur();return false;" 
+                onmouseover="toggleBack(this.parentElement, true);"
+                onmouseout="toggleBack(this.parentElement,
+                false);">item 1</a>
+                <div id="NewsItemName1" style="float:left;text-align:left;"></div>
+                <div id="NewsItemDate1" style="float:right;text-align:right;"></div>
+            </div>
+            <div id="NewsItem2">
+            <a id="NewsItemLink2" href=""
+                onClick="showFlyout(this);selectBack(this.parentElement);this.blur();return false;" 
+                onmouseover="toggleBack(this.parentElement, true);"
+                onmouseout="toggleBack(this.parentElement,
+                false);">item 2</a>
+                <div id="NewsItemName2" style="float:left;text-align:left;"></div>
+                <div id="NewsItemDate2" style="float:right;text-align:right;"></div>
+            </div>
+        </div>
+        <div id="navHolder">
+            <table border="0" cellpadding="0" cellspacing="0"
+                width="78px" height="20px"
+                style="background-image:url(../images/navBack.png);">
+                <tr>
+                    <td width="17px" align="center" valign="middle">
+                        <a id="buttonLeftNarrator"
+                            href="javascript:void(0);"
+                            onclick="this.blur();">
+                            <img id="buttonLeft"
+                            src="images/buttonUp_Off.png" border="0"
+                            onclick="setPreviousViewItems();"
+                            onmouseover="toggleButton(this,'buttonUp_On.png');"
+                            onmouseout="toggleButton(this,'buttonUp_Off.png');"/>
+                        </a>
+                    </td>
+                    <td width="44px" align="center" valign="middle"
+                        id="positionNumbers"
+                        style="color:white;font-family:宋体;font-size:12px;">
+                    </td>
+                    <td width="17px" align="center" valign="middle">
+                        <a id="buttonRightNarrator"
+                            href="javascript:void(0);"
+                            onclick="this.blur();">
+                            <img id="buttonRight"
+                            src="images/buttonDown_Off.png" border="0"
+                            onclick="setNextViewItems();"
+                            onmouseover="toggleButton(this,'buttonDown_On.png');"
+                            onmouseout="toggleButton(this,'buttonDown_Off.png');"/>
+                        </a>
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+
+        <!--</g:background>-->
+    </body>
+</html>
+
