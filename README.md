@@ -1,6 +1,7 @@
 SSdut-News
 ==========
 
+<<<<<<< HEAD
 大工软院的学生周知抓取小工具。
 This project is a Windows Gadget. It is used to catching the students news of school of software, Dalian Technology University.
 
@@ -55,3 +56,6 @@ C:\Windows\SysWOW64\config\systemprofile\AppData\Local\SSDUT_NEWS\ssdut.log
 32位windows7：
 C:\Windows\system32\config\systemprofile\AppData\Local\SSDUT_NEWS\ssdut.log
 
+=======
+澶у伐杞櫌鐨勫鐢熷懆鐭ユ姄鍙栧皬宸ュ叿銆俆his project is a Windows Gadget. It is used to catching the students news of school of software, Dalian Technology University.
+>>>>>>> e09face3592c408757fe4904eab24e5f7921d1da
