@@ -1,61 +1,56 @@
 SSdut-News
 ==========
 
-<<<<<<< HEAD
-´ó¹¤ÈíÔºµÄÑ§ÉúÖÜÖª×¥È¡Ð¡¹¤¾ß¡£
+å¤§å·¥è½¯é™¢çš„å­¦ç”Ÿå‘¨çŸ¥æŠ“å–å°å·¥å…·ã€‚
 This project is a Windows Gadget. It is used to catching the students news of school of software, Dalian Technology University.
 
-°²×°£º
+å®‰è£…ï¼š
 -----
 
-ÓÒ¼üÒÔ¹ÜÀíÔ±Éí·ÝÔËÐÐ setup.exe °²×°Ð¡¹¤¾ß
-×¢Òâ£ºÇëÎñ±ØÊ¹ÓÃ¹ÜÀíÔ±Éí·ÝÔËÐÐ¡£
+å³é”®ä»¥ç®¡ç†å‘˜èº«ä»½è¿è¡Œ SSdutNews.Gadget\setup.exe å®‰è£…å°å·¥å…·
+æ³¨æ„ï¼šè¯·åŠ¡å¿…ä½¿ç”¨ç®¡ç†å‘˜èº«ä»½è¿è¡Œã€‚
 
 =====================================================================
-Ê¹ÓÃ£º
+ä½¿ç”¨ï¼š
 -----
 
-×ÀÃæµ¥»÷ÓÒ¼ü->Ð¡¹¤¾ß¡£
-¾Í»á¿´µ½SSdutNewsÕâ¸öÐ¡¹¤¾ßÁË£¬Ë«»÷Ö®¼´¿É¡£
+æ¡Œé¢å•å‡»å³é”®->å°å·¥å…·ã€‚
+å°±ä¼šçœ‹åˆ°SSdutNewsè¿™ä¸ªå°å·¥å…·äº†ï¼ŒåŒå‡»ä¹‹å³å¯ã€‚
 
 =====================================================================
-Ð¶ÔØ£º
+å¸è½½ï¼š
 -----
 
-ÓÒ¼üÒÔ¹ÜÀíÔ±Éí·ÝÔËÐÐ uninstall.exe Ð¶ÔØÐ¡¹¤¾ß
+å³é”®ä»¥ç®¡ç†å‘˜èº«ä»½è¿è¡Œ SSdutNews.Gadget\uninstall.exe å¸è½½å°å·¥å…·
 
 =====================================================================
-ÊÖ¶¯°²×°£º
+æ‰‹åŠ¨å®‰è£…ï¼š
 ---------
 
-µ±Óöµ½Î´ÖªÎÊÌâÎÞ·¨°²×°Ê±£¬¿ÉÒÔÊÖ¶¯½«ÎÄ¼þ¿½±´µ½
-C:\Program Files\Windows Sidebar\GadgetsÄ¿Â¼ÏÂ
+å½“é‡åˆ°æœªçŸ¥é—®é¢˜æ— æ³•å®‰è£…æ—¶ï¼Œå¯ä»¥æ‰‹åŠ¨å°†æ–‡ä»¶æ‹·è´åˆ°
+C:\Program Files\Windows Sidebar\Gadgetsç›®å½•ä¸‹
 
-È»ºóÔÚÍ¬Ò»Ä¿Â¼ÏÂÔËÐÐ
-dist\updateLauncher.exe --startup install
+ç„¶åŽåœ¨åŒä¸€ç›®å½•ä¸‹è¿è¡Œ
+SSdutNews.Gadget\dist\updateLauncher.exe --startup install
 
 =====================================================================
-ÊÖ¶¯Ð¶ÔØ£º
+æ‰‹åŠ¨å¸è½½ï¼š
 ---------
 
-ÔÚC:\Program Files\Windows Sidebar\Gadgets\SSdutNews.GadgetÄ¿Â¼ÏÂ
-ÔËÐÐdist\updateLauncher.exe remove
+åœ¨C:\Program Files\Windows Sidebar\Gadgets\SSdutNews.Gadgetç›®å½•ä¸‹
+è¿è¡ŒSSdutNews.Gadget\dist\updateLauncher.exe remove
 
-É¾³ýC:\Program Files\Windows Sidebar\GadgetsÄ¿Â¼ÏÂµÄ
-SSdutNews.GadgetÎÄ¼þ¼Ð ¼´¿É
+åˆ é™¤C:\Program Files\Windows Sidebar\Gadgetsç›®å½•ä¸‹çš„
+SSdutNews.Gadgetæ–‡ä»¶å¤¹ å³å¯
 
 =====================================================================
-Óöµ½ÆäËû´íÎó & ±¨BUG
+é‡åˆ°å…¶ä»–é”™è¯¯ & æŠ¥BUG
 --------------------
 
-Èç¹ûÈÔ¾É³öÏÖ´íÎó»òÕß·¢ÏÖBUG£ºÇë½«¾¡¿ÉÄÜÏêÏ¸µÄ¾ßÌåÎÊÌâµÄÃèÊö£¬ºÍÈÕÖ¾ÎÄ¼þ£¨ÈÕÖ¾ÎÄ¼þÎ»ÖÃÔÚºóÃæ£©µÄÄÚÈÝ£¬·¢ÓÊ¼þµ½ dawn110110@foxmail.com£¬·Ç³£¸ÐÐ»£¡
+å¦‚æžœä»æ—§å‡ºçŽ°é”™è¯¯æˆ–è€…å‘çŽ°BUGï¼šè¯·å°†å°½å¯èƒ½è¯¦ç»†çš„å…·ä½“é—®é¢˜çš„æè¿°ï¼Œå’Œæ—¥å¿—æ–‡ä»¶ï¼ˆæ—¥å¿—æ–‡ä»¶ä½ç½®åœ¨åŽé¢ï¼‰çš„å†…å®¹ï¼Œå‘é‚®ä»¶åˆ° dawn110110@foxmail.comï¼Œéžå¸¸æ„Ÿè°¢ï¼
 
-ÈÕÖ¾ÎÄ¼þÔÚ£º
-64Î»windows7£º
+æ—¥å¿—æ–‡ä»¶åœ¨ï¼š
+64ä½windows7ï¼š
 C:\Windows\SysWOW64\config\systemprofile\AppData\Local\SSDUT_NEWS\ssdut.log
-32Î»windows7£º
+32ä½windows7ï¼š
 C:\Windows\system32\config\systemprofile\AppData\Local\SSDUT_NEWS\ssdut.log
-
-=======
-å¤§å·¥è½¯é™¢çš„å­¦ç”Ÿå‘¨çŸ¥æŠ“å–å°å·¥å…·ã€‚This project is a Windows Gadget. It is used to catching the students news of school of software, Dalian Technology University.
->>>>>>> e09face3592c408757fe4904eab24e5f7921d1da
